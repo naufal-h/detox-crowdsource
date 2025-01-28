@@ -66,12 +66,18 @@ export default async function Header() {
         </section>
 
         {/* Disclaimer Section */}
-        <Alert variant="destructive" className="mb-8">
+        <Alert
+          variant="destructive"
+          className="mb-8 text-red-500"
+          style={{
+            borderColor: "rgb(239 68 68 / var(--tw-text-opacity, 1));",
+          }}
+        >
           <AlertTriangle className="h-4 w-4" />
           <AlertTitle>Peringatan!</AlertTitle>
           <AlertDescription>
             Anda akan melihat konten yang mungkin bersifat toksik/ofensif. Harap
-            tidak mengambil konten ini secara pribadi.
+            tidak mengambil hati konten ini secara pribadi.
           </AlertDescription>
         </Alert>
 
