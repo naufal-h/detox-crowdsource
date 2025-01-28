@@ -34,7 +34,7 @@ This is a web application built to crowdsource non-toxic versions of toxic sente
 
 - **Framework**: [Next.js](https://nextjs.org/)
 - **Backend as a Service**: [Supabase](https://supabase.com/)
-- **UI Components**: [ShadCN](https://shadcn.dev/)
+- **UI Components**: [shadcn/ui](https://ui.shadcn.com/)
 - **Deployment**: [Vercel](https://vercel.com/)
 
 ## Installation
