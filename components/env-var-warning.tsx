@@ -24,9 +24,7 @@ export function EnvVarWarning() {
           variant={"default"}
           disabled
           className="opacity-75 cursor-none pointer-events-none"
-        >
-          <Link href="/sign-up">Sign up</Link>
-        </Button>
+        ></Button>
       </div>
     </div>
   );
