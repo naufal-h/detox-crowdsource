@@ -101,8 +101,4 @@ This is a web application built to crowdsource non-toxic versions of toxic sente
 ├── tailwind.config.js # Tailwind CSS configuration
 ```
 
-## License
-
-This project is licensed under the MIT License. See the `LICENSE` file for details.
-
 ---
