@@ -109,7 +109,7 @@ export default function ContributePage() {
           </ul>
           <h3 className="font-semibold mt-4">Contoh Detoksifikasi:</h3>
           <div className="bg-muted p-4 rounded-lg">
-            <div className="text-destructive">
+            <div className="text-red-500">
               Toksik: "Dasar goblok! Kerjamu payah!"
             </div>
             <p className="text-success">
