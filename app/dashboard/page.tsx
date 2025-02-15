@@ -60,9 +60,14 @@ export default async function Dashboard() {
               {filledSentences}/{totalSentences} kalimat telah didetoksifikasi
             </p>
           </div>
-          <Button asChild>
-            <Link href="/contribute">Mulai Kontribusi</Link>
-          </Button>
+          <div className="space-x-4">
+            <Button asChild>
+              <Link href="/contribute">Mulai Kontribusi</Link>
+            </Button>
+            <Button asChild>
+              <Link href="/evaluate-mlm">Evaluasi Model</Link>
+            </Button>
+          </div>
         </div>
         <Progress
           value={(filledSentences! / totalSentences!) * 100}
