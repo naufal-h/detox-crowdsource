@@ -30,17 +30,28 @@ export default function EvaluatePage() {
   const fetchRandomPair = async () => {
     setLoading(true);
 
-    const { data: pairs } = await supabase
-      .from("evaluation_mlm")
+    const { data: pairs, error } = await supabase
+      .rpc("get_next_evaluation_mlm")
       .select("*")
-      .is("toxicity", null)
-      .is("content_preservation", null)
-      .is("fluency", null)
-      .limit(1);
+      .limit(1)
+      .single();
+
+    if (error) {
+      console.error(error);
+      return;
+    }
+
+    // const { data: pairs } = await supabase
+    //   .from("evaluation_mlm")
+    //   .select("*")
+    //   .is("toxicity", null)
+    //   .is("content_preservation", null)
+    //   .is("fluency", null)
+    //   .limit(1);
 
     console.log("pairs", pairs);
 
-    setCurrentPair(pairs?.[0]);
+    setCurrentPair(pairs);
     setLoading(false);
   };
 
